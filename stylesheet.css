@@ -1,0 +1,267 @@
+
+body {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #444;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+  
+  li {
+    display: inline-flex;
+  }
+    
+    a {
+      text-decoration: none;
+      color: darkgray;
+      padding: 10px;
+      transition: all .3s ease-in-out;
+      border-bottom: 1px solid transparent;
+        }
+      a:hover {
+        color: gray;
+      }
+    
+.socialMedia i {
+  padding: 0 5px 0 5px;
+}
+
+.nav .active a { 
+  color: slateblue; 
+  border-bottom: 1px solid slateblue;
+}
+  .nav .active a:hover {
+    border-color: transparent;
+    background: slateblue;
+    color: white;
+  }
+
+.socialMedia {
+  display: inline-flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+h4 {
+    text-align: center;
+}
+.tab-panel { 
+  display: none;
+}
+
+.tab-panel.active { 
+  display: block; 
+}
+
+.main-rec-img {
+    display: block;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-rec-img img {
+    width: 100%;
+    margin: 0;
+}
+
+.main-rec-img::before {
+    content: "Lookin' GooD...";
+}
+
+.ing-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid black 2px;
+}
+
+ul.list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.step1::before {
+content: "Step One";
+font-weight: bold;
+}
+
+.step2::before {
+content: "Step Two";
+font-weight: bold;
+}
+
+.step3::before {
+content: "Step One";
+font-weight: bold;
+}
+.step4::before {
+content: "Step One";
+font-weight: bold;
+}
+
+.prep-container {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    border: solid black 2px;
+}
+
+
+.cook-content-flex {
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border: solid black 2px;
+    }
+
+.video {
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Reviews CODE Start */
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+
+/* Reviews CODE END */
+
+@media only screen and (max-width: 776px) {
+.cook-content-flex {
+    display: block;
+}
+
+
+}
+@media only screen and (max-width: 648px) {
+ .container {
+display: flex;
+flex-direction: row;
+    }
+
+    i {
+      padding: .5em 0 .5em 0;
+    }
+
+    .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-2 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+}
+
+.socialMedia {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialMedia i {
+  padding: 5px 0 5px 0 ;
+}
+
+
+}
+
